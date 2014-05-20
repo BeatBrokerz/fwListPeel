@@ -1,4 +1,4 @@
-flexloader.extendApp(function ($, myApp, config) {
+flexloader.extendApp(function ($, App, config) {
 
     if (config.autoload) {
         flexloader.addResources({
@@ -9,10 +9,10 @@ flexloader.extendApp(function ($, myApp, config) {
         flexloader.addCSS(config.script.basepath + "widget.css");
     }
 
-    myApp.addWidget('fwlistpeel', {
+    App.addWidget('fwlistpeel', {
 
         html: function (template, settings) {
-            if (settings.playlist && typeof myApp.Music.Playlist[settings.playlist] === 'undefined') {
+            if (settings.playlist && typeof App.Music.Playlist[settings.playlist] === 'undefined') {
                 settings.playlist = undefined;
             }
             settings = $.extend({ size: 'large' }, settings);
@@ -35,13 +35,13 @@ flexloader.extendApp(function ($, myApp, config) {
 
             var elastiStack = new ElastiStack(widget.find('.elasticstack')[0]);
 
-            myApp.on('bbflex-playlist-updated', function (id, media, index) {
+            App.on('bbflex-playlist-updated', function (id, media, index) {
                 if (!settings.playlist || settings.playlist == id) {
                     elastiStack._refresh();
                 }
             });
 
-            myApp.on('bbflex-playlist-changed', function (id) {
+            App.on('bbflex-playlist-changed', function (id) {
                 if (!settings.playlist || settings.playlist == id) {
                     widget.fadeOut(0, function () {
                         elastiStack = new ElastiStack(widget.find('.elasticstack')[0]);
