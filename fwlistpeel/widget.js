@@ -1,11 +1,11 @@
 flexloader.extendApp(function ($, App, config) {
 
     if (config.autoload) {
+        flexloader.addResource({ src: "//www.beatbrokerz.com/flex/js/modernizr.js" });
+        flexloader.addResource({ src: config.script.basepath + "widget.css" });
         flexloader.addResources({
-            fwlistpeelmodernizr: { src: "//www.beatbrokerz.com/flex/js/modernizr.js" },
             dragabilly: { src: config.script.basepath + "js/draggabilly.pkgd.min.js" },
-            elastiStack: { src: config.script.basepath + "js/elastiStack.js" },
-            fwlistpeelcss: { src: config.script.basepath + "widget.css"}
+            elastiStack: { src: config.script.basepath + "js/elastiStack.js" }
         });
     }
 
