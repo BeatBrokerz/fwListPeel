@@ -16,10 +16,14 @@ Once you have a flex app installed on your page, follow these steps to use this 
 ### Autoload Usage
 
 This widget can be auto-loaded from the Beat Brokerz CDN. Use the following url in your autoload settings:
+
 `//www.beatbrokerz.com/flex/widget/fwlistpeel/widget.js`
 
-You can use the [widget autoloader](http://www.beatbrokerz.com/flex/start/settings#autoloader) feature in your flex app settings to autoload this widget on every page your flex app is installed to, or autoload it selectively using a javascript command:
+**Beat Brokerz Autoloader**
+You can use the [widget autoloader](http://www.beatbrokerz.com/flex/start/settings#autoloader) feature in your flex app settings (on Beat Brokerz) to autoload this widget automatically on every page your flex app is installed to.
 
+**Javascript Autoloader**
+Or you can autoload it selectively on your pages using javascript:
 ```javascript
 flexloader.autoload('//www.beatbrokerz.com/flex/widget/fwlistpeel/widget.js');
 ```
