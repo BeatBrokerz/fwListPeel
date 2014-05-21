@@ -70,5 +70,16 @@ The widget supports the following settings:
 The rendered widget uses the following template structure and css classing.
 
 ```html
-
+<ul class="elasticstack">
+  <li>
+    <img> <!-- Beat Image -->
+    <div class="fw-songinfo">
+      <div class="fw-play"><i class="fwicon-play"></i></div>
+      <div class="fw-pause"><i class="fwicon-pause"></i></div>
+      <div class="fw-title" data-bind="html: title"></div>
+      <div class="fw-artist" data-bind="html: artist"></div>
+      <div class="fw-genres" data-bind="html: genres"></div>
+    </div>
+  </li>
+</ul>
 ```
