@@ -28,7 +28,7 @@ This widget can be auto-loaded from the Beat Brokerz CDN. Use the following url 
 > flexloader.autoload('//www.beatbrokerz.com/flex/widget/fwlistpeel/widget.js');
 > ```
 
-### Widget Files / Controlled Usage
+### Widget Files / Controlled Loading
 
 If you want to load this widget from your own server or you want to explicitly control the resources that get loaded on your page, you'll need to do the following:
 
@@ -42,10 +42,18 @@ If you want to load this widget from your own server or you want to explicitly c
 
 If you choose not to autoload, then you'll need to manually reference the required resources in your page like so:
 
-> **Example:** 
 > ```html
 > <script type="text/javascript" src="/path/to/fwlistpeel/widget.js"></script>
 > <link rel="stylesheet" type="text/css" href="/path/to/fwlistpeel/widget.css" />
+> ```
+
+### Usage Instructions
+
+Once the widget is loaded on your page, display the widget where you want using any of the standard [widget display methods](http://www.beatbrokerz.com/flex/widgets#display-methods). 
+
+> **Embed Example:** 
+> ```html
+> <div data-bbflex="widget:fwlistpeel,size:large"></div>
 > ```
 
 ### Widget Settings
@@ -55,15 +63,6 @@ The widget supports the following settings:
 1. **size**: Optional. A string value ('small', 'medium', or 'large') which controls the size of the widget. Default: 'large'
 2. **theme**: Optional. A string value which allows you to define a custom [theme prefix](http://www.beatbrokerz.com/flex/widgets/theming) for the widget
  
-### Usage Instructions
-
-Add the widget inline with your content using any of the standard [widget display methods](http://www.beatbrokerz.com/flex/widgets#display-methods). 
-
-> **Manual Installation:** 
-> ```html
-> <div data-bbflex="widget:fwlistpeel,size:large"></div>
-> ```
-
 ### Theme & Structure Reference
 
 The rendered widget uses the following template structure and css classing.
