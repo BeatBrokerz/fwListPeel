@@ -44,6 +44,8 @@ If you choose not to autoload, then you'll need to manually reference the requir
 
 > ```html
 > <script type="text/javascript" src="/path/to/fwlistpeel/widget.js"></script>
+> <script type="text/javascript" src="/path/to/fwlistpeel/js/draggabilly.pkgd.min.js"></script>
+> <script type="text/javascript" src="/path/to/fwlistpeel/js/elastiStack.js"></script>
 > <link rel="stylesheet" type="text/css" href="/path/to/fwlistpeel/widget.css" />
 > ```
 
