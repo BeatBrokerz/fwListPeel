@@ -76,9 +76,9 @@ The rendered widget uses the following template structure and css classing.
     <div class="fw-songinfo">
       <div class="fw-play"><i class="fwicon-play"></i></div>
       <div class="fw-pause"><i class="fwicon-pause"></i></div>
-      <div class="fw-title" data-bind="html: title"></div>
-      <div class="fw-artist" data-bind="html: artist"></div>
-      <div class="fw-genres" data-bind="html: genres"></div>
+      <div class="fw-title"></div>
+      <div class="fw-artist"></div>
+      <div class="fw-genres"></div>
     </div>
   </li>
 </ul>
